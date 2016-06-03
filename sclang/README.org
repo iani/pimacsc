@@ -1,0 +1,15 @@
+My own copy of sclang from the SuperCollider 3.7alpha source code distro.
+
+Reasons:
+
+1) Have it readily available instead of having to download the entire SC source code repo from git every time.
+2) Install it using [[https://github.com/dimitri/el-get][el-get]].
+
+El-get recipe:
+
+#+BEGIN_SRC emacs-lisp
+(:name sclang :url "https://github.com/iani/sclang.git"
+       :type git
+       :features (sclang)
+       :after nil)
+#+END_SRC
