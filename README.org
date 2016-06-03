@@ -1,0 +1,6 @@
+
+
+This repository contains libraries needed to make SuperCollider run on EMACS plus a script for linking these to the appropriate places on a RaspBerry Pi, and an emacs-lisp file for setting the configuration needed to run SuperCollider on EMACS.
+
+- scel :: SuperCollider Library for connecting to EMACS.
+- sclang :: Emacs Library for connecting to SuperCollider.
