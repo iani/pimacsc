@@ -8,8 +8,8 @@ This repository contains libraries needed to make SuperCollider run on EMACS plu
 
 On your raspberry pi shell, get the library from GitHub:
 
-cd ~/ # switch to home directory
-git clone git@github.com:iani/pimacsc.git # download the library from GitHub
+: cd ~/ # switch to home directory
+: git clone git@github.com:iani/pimacsc.git # download the library from GitHub
 
 On emacs, evaluate the following expression to load the install script:
 
