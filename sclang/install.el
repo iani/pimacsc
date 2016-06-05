@@ -12,6 +12,8 @@
 ;; Then in emacs:
 ;; (load-file "/home/pi/pimacsc/sclang/install.el")
 
+;; TODO: set boot string for localhost server
+
 ;;; Code:
 (let* ((scemacs-root (file-truename "~/.local/share/SuperCollider/Extensions/scemacs"))
        (sclang-root (file-name-directory load-file-name)))
@@ -19,7 +21,7 @@
   (sleep-for 0.5)
   (unless (file-exists-p scemacs-root)
     (make-symbolic-link
-     (concat (file-name-directory sclang-root) "scemacs")
+     (concat (file-name-directory (directory-file-name sclang-root)) "scemacs")
      scemacs-root))
   (add-to-list 'load-path sclang-root)
   (add-to-list 'exec-path "/usr/local/bin/"))
