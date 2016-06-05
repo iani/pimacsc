@@ -14,3 +14,19 @@ On your raspberry pi shell, get the library from GitHub:
 On emacs, evaluate the following expression to load the install script:
 
 : (load-file "/home/pi/pimacsc/sclang/install.el")
+
+* Booting the server on Raspberry Pi
+
+To boot the server, jack audio server must be running.  Before doing
+
+: Server.default.boot
+
+start jack from the command line by running:
+
+: jackd -P75 -dalsa -dhw:0 -p1024 -n3 -s -r44100
+
+edit -dhw:0 to match your soundcard.  0 is built-in output. 1 is usually USB.
+
+After that, you can boot the default server on the SC Workspace by running:
+
+: Server.default.boot
