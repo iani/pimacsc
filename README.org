@@ -15,6 +15,14 @@ On emacs, evaluate the following expression to load the install script:
 
 : (load-file "/home/pi/pimacsc/sclang/install.el")
 
+This links the library for SuperCollider which you downloaded from github to the required place in the SuperCollider Extensions folder, and loads the EMACS library.  This setting will last only for the current session.  To reload the required EMACS library every time that you start EMACS, place the line: 
+
+#+BEGIN_SRC bash
+(load-file "/home/pi/pimacsc/sclang/install.el")
+#+END_SRC
+
+somewhere in your init file.
+
 * Booting the server on Raspberry Pi
 
 To boot the server, jack audio server must be running.  Before doing
